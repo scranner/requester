@@ -12,7 +12,7 @@
   "author": "James McCartney <zeldas-link@hotmail.co.uk>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:scranner/requester.git"
   },
   "license": "MIT",
   "engines": {

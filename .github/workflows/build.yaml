@@ -1,8 +1,6 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -21,8 +19,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+      - run: npm ci
       - run: npm run test:prod
       - run: npm run build
       - run: npm run report-coverage
-      - run: npm run deploy-docs
-      - run: npm run semantic-release
